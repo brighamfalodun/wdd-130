@@ -1,0 +1,276 @@
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 130 | An Introduction to HTML</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles/course.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="page">
+      <h1>WDD 130<span id="coursetitle">: Web Fundamentals</span></h1>
+      <img src="../images/byui-logo.svg" alt="BYU-I logo" class="logo">
+    </div>
+  </header>
+
+  <main class="page">
+    <nav>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course">Home</a></span>
+      <span class="active"><a
+          href="https://byui-cse.github.io/wdd130-ww-course/week01">W1</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week02">W2</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week03">W3</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week04">W4</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week05">W5</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week06">W6</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week07">W7</a></span>
+      <span><a href="https://byui.instructure.com/calendar" target="_blank">I-Learn</a></span>
+    </nav>
+    <h2>An Introduction to HTML</h2>
+    <h3>Overview</h3>
+    <p>HTML stands for HyperText Markup Language and is one of the three core technologies of
+      the web (HTML, CSS, and JavaScript). Hypertext refers to the way we can place hypertext links
+      in our document that allows
+      our users to move from one page to another. Markup is a set of symbols or codes for displaying
+      content on the Internet. Web browsers use HTML markup and content to render pages.</p>
+    <div class="callout info">"HTML (HyperText Markup Language) is the most basic building block of
+      the Web. It defines the meaning and structure of web content. Other technologies besides HTML
+      are generally used to describe a web page's appearance/presentation (CSS) or
+      functionality/behavior (JavaScript)." - <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN</a>
+    </div>
+
+    <h3>Prepare</h3>
+    <p>Prepare for the assignment by carefully pondering, noting, and referencing the materials
+      provided.</p>
+    <ul>
+      <li>Watch: 🎦 <a href="https://www.youtube.com/embed/HTsJbDw13tI" target="_blank">Web
+          Development Basics</a> | (4:32 mins, <a
+          href="https://byui-wdd.github.io/wdd130/text/webdev_basics.pdf" target="_blank"
+          rel="noopener">Transcript</a>)
+      </li>
+      <li>Read: 📄 <a
+          href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"
+          target="_blank" rel="noopener">HTML Basics</a> - MDN</li>
+
+      <li>Watch: 🎦 <a href="https://www.youtube.com/embed/jxYtjiuPfLQ" target="_blank">What is
+          HTML?</a> | (3:25 mins, <a href="https://byui-wdd.github.io/wdd130/text/what_is_html.pdf"
+          target="_blank" rel="noopener">Transcript </a>)
+      </li>
+      <li>Watch: 🎦 <a href="https://youtu.be/GpZmiD8WlFo" target="_blank">HTML Elements and
+          Attributes</a> | (5:52 mins, <a
+          href="https://byui-wdd.github.io/wdd130/text/beg_html_elements.pdf" target="_blank"
+          rel="noopener">Transcript</a>)
+      </li>
+
+    </ul>
+    <h3>Activity Instructions</h3>
+    <p>In this activity, answer the following questions about HTML and review the solutions
+      provided for your reference.</p>
+    <ol>
+      <li>The following HTML elements are <strong>required</strong> for every HTML document created
+        in this course.<br> What is the purpose of each of the following HTML elements?
+        <ul style="list-style-type: none; padding: 0;">
+          <li>
+            <pre><code class="html">&lt;!DOCTYPE html&gt;</code></pre>
+            <details>
+              <summary>Answer</summary>
+              <p class="smaller">"It is a required preamble. In the mists of time, when HTML was
+                young (around 1991/92), doctypes were meant to act as links to a set of rules that
+                the HTML page had to follow to be considered good HTML, which could mean automatic
+                error checking and other useful things. However, these days, they don't
+                do much and are basically just needed to make sure your document behaves correctly.
+                That's all you
+                need to know for now." - <a
+                  href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype"
+                  target="_blank">MDN</a>
+              </p>
+              <p class="smaller">☑️ This is a required, development checklist item for all HTML
+                documents produced in this course.</p>
+            </details>
+          </li>
+          <li>
+            <pre><code class="html">&lt;html lang="en-US"&gt; ... &lt;/html&gt;</code></pre>
+            <details>
+              <summary>Answer</summary>
+              <p class="smaller">"This element wraps all the content on the entire page and is
+                sometimes known as the root element. It also includes the <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#lang"
+                  target="_blank">lang</a> attribute, setting the primary language of the document."
+                -
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html"
+                  target="_blank">MDN</a>
+              </p>
+              <p class="smaller">☑️ This is a required, development checklist item and must include
+                the lang attribute.</p>
+            </details>
+          </li>
+          <li>
+            <pre><code class="html">&lt;head&gt; ... &lt;/head&gt;</code></pre>
+            <details>
+              <summary>Answer</summary>
+              <p class="smaller">"The <strong>head</strong> HTML element contains machine-readable
+                information (metadata) about the document, like its character support, viewport
+                sizing, title, scripts, and style sheets." - <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head"
+                  target="_blank">MDN</a>
+              </p>
+              <p class="smaller">☑️ This is a required, development checklist item.</p>
+            </details>
+          </li>
+          <li>
+            <pre><code class="html">&lt;meta charset="utf-8"&gt;</code></pre>
+            <details>
+              <summary>Answer</summary>
+              <p class="smaller">Located within the &lt;head&gt; element. "This attribute declares
+                the document's character encoding. If the attribute is present, its value must be an
+                ASCII case-insensitive match for the string "utf-8", because UTF-8 is the only valid
+                encoding for HTML5 documents. &lt;meta&gt; elements which declare a character
+                encoding must be located entirely within the first 1024 bytes of the document." - <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta#attr-charset"
+                  target="_blank">MDN</a>
+              </p>
+              <p class="smaller">☑️ This is a required, development checklist item.</p>
+            </details>
+          </li>
+          <li>
+            <pre><code class="html">&lt;meta name="viewport" content="width=device-width,initial-scale=1.0"&gt;</code></pre>
+            <details>
+              <summary>Answer</summary>
+              <p class="smaller">Located within the &lt;head&gt; element. "This viewport element
+                ensures the page renders at the width of viewport, preventing mobile browsers
+                from rendering pages wider than the viewport and then shrinking them down." - <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag"
+                  target="_blank">MDN</a>
+              </p>
+              <p class="smaller">☑️ This is a required, development checklist item.</p>
+            </details>
+          </li>
+          <li>
+            <pre><code class="html">&lt;title&gt;...&lt;/title&gt;</code></pre>
+            <details>
+              <summary>Answer</summary>
+              <p class="smaller">Located within the &lt;head&gt; element. "This sets the title of
+                your page, which is the title that appears in the browser tab of the page.
+                It is also used to describe the page when you bookmark/favorite it." - <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title"
+                  target="_blank">MDN</a></p>
+              <p class="smaller">
+                The content of the title should closely match the content of the heading 1
+                &lt;h1&gt; element in the document &lt;body&gt;.</p>
+
+              <p class="smaller">☑️ This is a required, development checklist item and must be
+                relevant to the document.</p>
+            </details>
+          </li>
+          <li>
+            <pre><code class="html">&lt;body&gt; ... &lt;/body&gt;</code></pre>
+            <details>
+              <summary>Answer</summary>
+              <p class="smaller">"The &lt;body&gt; HTML element represents the content of an HTML
+                document. There can be only one body element in a document. It contains all the
+                content that you want to show to web users when they visit your page, whether that's
+                text, images, videos, games, playable audio tracks, or whatever else." - <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body"
+                  target="_blank">MDN</a>
+              </p>
+              <p class="smaller">☑️ This is a required, development checklist item.</p>
+            </details>
+          </li>
+        </ul>
+      </li>
+      <li>What is the basic <a
+          href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics#anatomy_of_an_html_document"
+          target="_blank">anatomy</a> of an HTML document that is required for all pages in this
+        course?
+        <details>
+          <summary>Answer</summary>
+          <pre>
+       <code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width"&gt;
+    &lt;title&gt;Relevant Document Title&lt;/title&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+
+  &lt;/body&gt;
+&lt;/html></code></pre>
+        </details>
+      </li>
+      <li>Using the following example HTML snippet of code, technically <strong>name</strong> the
+        numbered parts:
+        <pre><code class="html">&lt;p&gt;A paragraph containing a hyperlink to &lt;a href="https://www.byui.edu"&gt;BYU-Idaho&lt;/a&gt;.&lt;/p&gt;</code></pre>
+        <div class="callout reference">
+          <ol>
+            <li>&lt;p&gt;</li>
+            <li>&lt;/p&gt;</li>
+            <li>href</li>
+            <li>A paragraph containing a hyperlink to <a href="https://www.byui.edu">BYU-Idaho</a>.
+            </li>
+            <li>The entire snippet</li>
+          </ol>
+        </div>
+        <details>
+          <summary>Answers</summary>
+          <ol>
+            <li><strong>opening or start tag</strong></li>
+            <li><strong>closing or end tag</strong></li>
+            <li><strong>attribute</strong> - The value of this <strong>href</strong> attribute,
+              <em>https://www.byui.edu</em>, specifies the anchor &lt;a&gt; tag's destination, which
+              destination in this case is an absolute reference, and means <strong>hypertext
+                reference</strong>.
+            </li>
+            <li><strong>content</strong> or the text node of the paragraph element.</li>
+            <li>An HTML paragraph <strong>Element</strong></li>
+          </ol>
+        </details>
+      </li>
+      <li>Some elements have no content and are called _______.<br> An example element of this type
+        is
+        an image &lt;img&gt; element.
+        <details>
+          <summary>Answer</summary>
+          <a href="https://developer.mozilla.org/en-US/docs/Glossary/Void_element"
+            target="_blank">Void elements</a><br>
+          Example:
+          <pre><code class="html">&lt;img src="images/sample.png" alt="A sample image"&gt;</code></pre>
+          <div class="callout info">In this class, we follow contemporary recommendations and do
+            <strong>NOT</strong> include a closing forward slash / in the void element's closing
+            tag.
+          </div>
+        </details>
+      </li>
+    </ol>
+    <div class="callout info">
+      <h4>📑 Reference: Getting Started with the Web</h4>
+      <ul>
+        <li><a
+            href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"
+            target="_blank">HTML
+            Basics</a>
+        </li>
+      </ul>
+    </div>
+
+  </main>
+  <footer>
+    <p>Copyright &copy; Brigham Young University-Idaho | All rights reserved</p>
+  </footer>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="../scripts/preventCodeSelect.js"></script>
+</body>
+
+</html>
